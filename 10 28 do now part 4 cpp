@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int get_ticket_price(int visitor_age);
+
+int main() {
+	cout << get_ticket_price(7);
+}
+
+int get_ticket_price(int visitor_age) {
+	if (visitor_age < 10) {
+		return 8;
+	}
+	else if (visitor_age < 60) {
+		return 18;
+	}
+	else if (visitor_age >= 60) {
+		return 12;
+	}
+}
